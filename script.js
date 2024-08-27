@@ -8,9 +8,7 @@ button.addEventListener('click', (e)=>{
 	console.log(inputElem.value);
 	e.preventDefault();
 	setTimeout(async () => {
-		const pTag = document.createElement('p');
-		pTag.innerText =  inputElem.value;
-		outputDiv.append(pTag);
-    console.log(outputDiv);
+		outputDiv.innerText = await inputElem.value;
+         console.log(outputDiv);
 	}, delayElem.innerText);
 })
