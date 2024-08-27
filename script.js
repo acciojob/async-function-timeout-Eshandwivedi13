@@ -10,5 +10,5 @@ button.addEventListener('click', (e)=>{
 	setTimeout(async () => {
 		outputDiv.innerText = await inputElem.value;
          console.log(outputDiv);
-	}, delayElem.innerText);
+	}, delayElem.value);
 })
